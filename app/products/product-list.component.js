@@ -9,21 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.pageTitle = 'Product management';
+var ProductListComponent = (function () {
+    function ProductListComponent() {
+        this.pageTitle = 'Product List!';
     }
-    AppComponent.prototype.getTitle = function () {
-        return 'Product management';
-    };
-    AppComponent = __decorate([
+    ProductListComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<div>\n        <h1>{{getTitle()}} </h1>\n        <pm-products></pm-products>\n    </div>"
+            selector: 'pm-products',
+            templateUrl: 'app/products/product.list.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ProductListComponent);
+    return ProductListComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ProductListComponent = ProductListComponent;
+//# sourceMappingURL=product-list.component.js.map
