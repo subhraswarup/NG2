@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector:'my-app',
     template:`<div>
         <h1>{{getTitle()}} </h1>
-        <pm-products></pm-products>
+        <pm-products></pm-products>      
     </div>`
 })
 export class AppComponent{
