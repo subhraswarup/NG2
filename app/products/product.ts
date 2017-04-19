@@ -9,4 +9,5 @@ export interface IProduct{
     description: string;
     starRating: number;
     imageUrl: string;
+    calculateDiscount(percent:number): number;
 }
