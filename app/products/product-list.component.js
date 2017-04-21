@@ -24,7 +24,7 @@ var ProductListComponent = (function () {
                 "releaseDate": "March 19, 2016",
                 "description": "Leaf rake with 48-inch wooden handle.",
                 "price": 19.95,
-                "starRating": 3.2,
+                "starRating": 2,
                 "imageUrl": "http://html.com/wp-content/uploads/flamingo.jpg"
             },
             {
@@ -44,7 +44,7 @@ var ProductListComponent = (function () {
                 "releaseDate": "May 21, 2016",
                 "description": "Curved claw steel hammer",
                 "price": 8.9,
-                "starRating": 4.8,
+                "starRating": 1,
                 "imageUrl": "http://html.com/wp-content/uploads/flamingo.jpg"
             },
             {
@@ -74,6 +74,9 @@ var ProductListComponent = (function () {
     };
     ProductListComponent.prototype.ngOnInit = function () {
         console.log('In OnInit');
+    };
+    ProductListComponent.prototype.onRatingClicked = function (message) {
+        this.pageTitle = 'Product List: ' + message;
     };
     ProductListComponent = __decorate([
         core_1.Component({
