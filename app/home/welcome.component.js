@@ -9,23 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var product_service_1 = require('./products/product.service');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.pageTitle = 'Product management';
+var WelcomeComponent = (function () {
+    function WelcomeComponent() {
+        this.pageTitle = 'Welcome';
     }
-    AppComponent.prototype.getTitle = function () {
-        return 'Product management';
-    };
-    AppComponent = __decorate([
+    WelcomeComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<div>\n        <h1>{{getTitle()}} </h1>\n        <pm-products></pm-products>      \n    </div>",
-            providers: [product_service_1.ProductService]
+            templateUrl: 'app/home/welcome.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], WelcomeComponent);
+    return WelcomeComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.WelcomeComponent = WelcomeComponent;
+//# sourceMappingURL=welcome.component.js.map
